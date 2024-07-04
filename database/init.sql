@@ -11,9 +11,9 @@ $$;
 
 \c todutiesdb
 
-CREATE TABLE dutie (
+CREATE TABLE duty (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL
 );
 
-GRANT SELECT, INSERT, UPDATE ON TABLE dutie TO todutiesuser;
+GRANT SELECT, INSERT, UPDATE ON TABLE duty TO todutiesuser;
