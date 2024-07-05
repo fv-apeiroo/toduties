@@ -1,0 +1,16 @@
+.app-logo {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.app-logo-img {
+    width: 30px;
+    margin-right: 2px;
+}
+
+.app-layout-general {
+  min-height: 95vh;
+}
