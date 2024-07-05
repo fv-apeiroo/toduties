@@ -58,17 +58,37 @@ After running docker-compose up --build, the services will be available at the f
 - Backend API: http://localhost:5000/api/duties
 
 ### Usage (screenshots)
+![image](https://github.com/fv-apeiroo/toduties/assets/109788768/766f8a8b-4b3e-48b7-a250-799eef65c695)
+
+![image](https://github.com/fv-apeiroo/toduties/assets/109788768/d29d49a2-0408-4301-90b8-8c710a1d5a9f)
+
 #### Creating a Duty
 - Navigate to the duties section
 - Enter the name of the duty and click "Create"
+
+![image](https://github.com/fv-apeiroo/toduties/assets/109788768/220784c9-62a1-45db-b718-291170f44a6e)
+
+![image](https://github.com/fv-apeiroo/toduties/assets/109788768/360bbaa4-790f-4b80-862c-250039446980)
 
 #### Updating a Duty
 - Click on the "Update" button next to a duty
 - Modify the name and confirm the update
 
+![image](https://github.com/fv-apeiroo/toduties/assets/109788768/3eb890d7-0237-41c1-a2b0-11fca6d4ee6e)
+
+![image](https://github.com/fv-apeiroo/toduties/assets/109788768/260d912c-55e0-40c1-a170-6122a47457a2)
+
+![image](https://github.com/fv-apeiroo/toduties/assets/109788768/c8dba533-9f6c-4e2c-b4c1-b84049aedecf)
+
 #### Deleting a Duty
 - Click on the "Delete" button next to a duty
 - Confirm the deletion in the modal
+
+![image](https://github.com/fv-apeiroo/toduties/assets/109788768/459af816-6fa1-4645-9248-e277426c37b2)
+
+![image](https://github.com/fv-apeiroo/toduties/assets/109788768/2b98269c-b562-435e-993d-3bf7835265ca)
+
+![image](https://github.com/fv-apeiroo/toduties/assets/109788768/b848838d-1c0a-4dbc-9b7e-82994b8cc8b4)
 
 ### Testing
 #### Backend
