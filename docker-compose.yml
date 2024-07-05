@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.9'
 services:
   db:
     # service/container for the database
@@ -29,6 +29,22 @@ services:
       - "5000:5000"
     depends_on:
       - db
+    networks:
+      - toduties_network
+  
+  frontend:
+    build: ./frontend
+    container_name: toduties_frontend
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      DB_HOST: db
+      DB_PORT: 5432
+    ports:
+      - "8081:8081"
+    depends_on:
+      - backend
     networks:
       - toduties_network
 
