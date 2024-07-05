@@ -47,6 +47,17 @@ services:
       - backend
     networks:
       - toduties_network
+  
+  frontend-test:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: test
+    container_name: toduties_frontend_test
+    depends_on:
+      - frontend
+    networks:
+      - toduties_network
 
 volumes:
   db_data:
