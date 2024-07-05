@@ -23,14 +23,3 @@ COPY default.conf /etc/nginx/conf.d/default.conf
 EXPOSE 8081
 
 CMD ["nginx", "-g", "daemon off;"]
-
-# for testing
-FROM node:18.20.3 AS test
-
-WORKDIR /app
-
-COPY --from=build /app .
-
-RUN npm install
-
-CMD ["npm", "test"]

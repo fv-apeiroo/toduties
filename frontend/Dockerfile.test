@@ -1,0 +1,10 @@
+# for testing
+FROM node:18.20.3 AS test
+
+WORKDIR /app
+
+COPY --from=build /app .
+
+RUN npm install
+
+CMD ["npm", "test"]
