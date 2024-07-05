@@ -116,5 +116,33 @@ docker compose --profile test run frontend-test
 - PostgreSQL
 - Docker
 
+## Architecture and Design Considerations
+To ensure that the toduties application can grow and scale over time, the following architectural and design principles have been applied:
+### Layered Architecture
+The application follows a layered architecture, separating concerns across different layers to enhance maintainability and scalability.
+
+#### Database Layer:
+- PostgreSQL is used as the relational database management system (RDBMS) to store duties.
+- Plain SQL queries are used instead of ORM to have full control over the database interactions.
+
+#### Backend Layer:
+- Built with Node.js and Express, and written in TypeScript to ensure type safety and better code maintainability.
+- The backend is structured into controllers, services, and routes to separate different concerns:
+  - Controllers handle HTTP requests and responses.
+  - Services contain the business logic.
+  - Routes define the endpoints and map them to controllers.
+
+#### Frontend Layer:
+- Developed using React with TypeScript in strict mode to catch errors early in the development process.
+- Ant Design is used as the component library for a consistent and professional user interface.
+- State management is handled using React's local state and context API to avoid complexity.
+- Client-side routing is used to manage navigation within the application.
+
+### Scalability
+The use of Docker ensures that the application can be deployed consistently across different environments and scales efficiently.
+
+### Docker Integration
+Docker is utilized to containerize the application, ensuring consistent environments across different stages of development, testing, and production.
+
 ## Author
 Francisco Veragua
