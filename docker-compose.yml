@@ -58,6 +58,8 @@ services:
       - frontend
     networks:
       - toduties_network
+    profiles:
+      - test
 
 volumes:
   db_data:

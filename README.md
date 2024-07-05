@@ -80,7 +80,7 @@ docker compose exec backend npm test
 #### Frontend
 To run the frontend tests, execute the following command:
 ~~~bash
-docker compose run frontend-test
+docker compose --profile test run frontend-test
 ~~~
 
 ## Built With
