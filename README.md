@@ -97,11 +97,15 @@ To run the backend tests, execute the following command:
 docker compose exec backend npm test
 ~~~
 
+![image](https://github.com/fv-apeiroo/toduties/assets/109788768/739e3ddc-2159-4d7e-85af-33d4c3368bea)
+
 #### Frontend
 To run the frontend tests, execute the following command:
 ~~~bash
 docker compose --profile test run frontend-test
 ~~~
+
+![image](https://github.com/fv-apeiroo/toduties/assets/109788768/b7a718cd-f314-45b0-a9d1-491a61d7e7bd)
 
 ## Built With
 - React
